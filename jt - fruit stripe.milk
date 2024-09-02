@@ -255,7 +255,7 @@ per_frame_32=
 per_pixel_1=//warp=if(above(.4,rad),if(above(.2,rad),10,1),0);
 per_pixel_2=warp=1-.00001*abs(sqr(1/rad));
 per_pixel_3=//rot=if(above(.5,y),.05,.0);
-per_pixel_4=rot=.2cos(1*rad);
+per_pixel_4=rot=.2*cos(1*rad);
 warp_1=`shader_body
 warp_2=`{
 warp_3=`    // sample previous frame
